@@ -17,7 +17,6 @@ int main(void)
 		printf("Something went wrong\n");
 		return -1;
 	}
-	slovo = 0;
 	arr = NULL;	// массив строк пустой
 	str = NULL;		// текущая строка пустая
 	flag = NO;		// опускаем флаг строки
@@ -35,7 +34,6 @@ int main(void)
 			str = (char*)realloc(str, (dlinaStr + 2) * sizeof(char));	// выделяем память
 			str[dlinaStr++] = '\n';	// записываем символ перевода строки
 			str[dlinaStr] = '\0';		// записываем символ конца строки
-			slovo++;
 			flag = YES;	// поднимаем флаг
 			// проходим по всем сохраненным строкам
 			for (i = 0; i < strcnt; i++)
