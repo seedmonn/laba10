@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int flag, flagRazdel, dlinaStr, strcnt, i, slovo;
+	int flag, flagRazdel, dlinaStr, strcnt, i;
 	char** arr, * str, c;
 	FILE* input, * output;
 
